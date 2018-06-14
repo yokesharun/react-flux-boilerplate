@@ -1,0 +1,4 @@
+export const APP_ACTIONS = {
+	CREATE_ITEM : 'CREATE_ITEM',
+	CLEAR_ITEMS : 'CLEAR_ITEMS'
+};
