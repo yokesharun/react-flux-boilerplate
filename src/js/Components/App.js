@@ -2,8 +2,12 @@ import React, { Component } from 'react';
 import '../../css/App.css';
 import * as AppActions from '../Actions/AppActions';
 import AppStore from '../Stores/AppStore';
+import NavBar from './NavBar';
+import { 
+    Button, 
+} from 'react-bootstrap';
 
-class App extends Component {
+export default class App extends Component {
 
 	constructor(props) {
         super(props);
@@ -35,20 +39,22 @@ class App extends Component {
     render() {
 
     	const listItems = this.state.items.map((item) =>
-			<li key={item}>{item}</li>
+			<li className="item">{item}</li>
 		);
 
         return (
             <div className="App">
+            	<NavBar/>
                 <h2>
-                    React JS Flux BoilerPlate
+                    React JS Flux BoilerPlate - Create / Clear Items
                 </h2>
-                <button onClick={this.onCreateItem}> Create Item </button>
-                <button onClick={this.onClearItems}> Clear Items </button>
-                {listItems}
+                <div className="Description">
+                	<code>React JS</code> + <code>Flux</code> + <code>Bootstrap</code> + <code>React Router</code>
+                </div>
+                <Button className="item-btn" onClick={this.onCreateItem}> Create Item </Button>
+                <Button className="item-btn" onClick={this.onClearItems}> Clear Items </Button>
+                <ul>{listItems}</ul>
             </div>
         );
     }
 }
-
-export default App;

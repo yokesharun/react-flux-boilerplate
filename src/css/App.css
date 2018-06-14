@@ -1,3 +1,16 @@
 .App {
     text-align: center;
 }
+.Description {
+    padding: 1em;
+}
+.item-btn {
+    margin: 1em;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul .item {
+    padding: 0.5em;
+}

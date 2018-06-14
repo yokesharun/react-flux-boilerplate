@@ -4,7 +4,7 @@ Hackathon Ready Boilerplate for React JS with Flux
 
 ## What's inside?
 
-React JS + Flux + React Router
+React JS (16.4.1) + Flux (3.1.3) + React Router (4.3.1) + React Boostrap (0.32.1)
 
 ## How to use?
 
